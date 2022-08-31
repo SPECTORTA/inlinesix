@@ -1,0 +1,31 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>ABOUT</title>
+    <link rel="stylesheet" href="styles.css">
+    <body style="background-color: #000000; color: white; margin-left: 50px; margin-right: 50px">
+    </body>
+</html>
+
+<h1 style="margin-top: 100px;"><a class="bread" onclick="transitionToPage('index.html')">/HOME</a>/ABOUT.txt</h1>
+
+<p1>funny website about page idk what to put here lol this is just temp</p1>
+
+<a class="backbutton" onclick="transitionToPage('index.html')"ABOUT.txt> [BACK] </a>
+
+
+<script>
+    
+window.transitionToPage = function(href) {
+    document.querySelector('body').style.opacity = 0
+    setTimeout(function() { 
+        window.location.href = href
+    }, 200)
+}
+
+document.addEventListener('DOMContentLoaded', function(event) {
+    document.querySelector('body').style.opacity = 1
+})
+
+
+</script>

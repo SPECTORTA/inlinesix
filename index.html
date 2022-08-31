@@ -1,0 +1,51 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>INLINESIX//HOME</title>
+    <link rel="stylesheet" href="styles.css">
+    <body style="background-color: #000000; color: white; margin-left: 50px; margin-right: 50px">
+    </body>
+</html>
+<h2 style="margin-top: 0px; float: right;">inlinesix.net</h2>
+
+<h1 style="margin-top: 100px;">/HOME</h1>
+
+<a onclick="transitionToPage('inlinesix.html')">/INLINESIX</a>
+<a onclick="transitionToPage('enclosed.html')">/ENCLOSED</a>
+<a onclick="transitionToPage('art.html')">/ART</a>
+<a onclick="transitionToPage('about.html')"> ABOUT.txt </a>
+
+<div class="bottomtext" >
+<p1 onclick="transitionToPage('changelog.html')">VER. 1.01 <p1 class="log">CLICK FOR CHANGELOG</p1> </p1>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    
+  window.transitionToPage = function(href) {
+      document.querySelector('body').style.opacity = 0
+      setTimeout(function() { 
+          window.location.href = href
+      }, 200)
+  }
+  
+  document.addEventListener('DOMContentLoaded', function(event) {
+      document.querySelector('body').style.opacity = 1
+  })
+  
+  
+  </script>

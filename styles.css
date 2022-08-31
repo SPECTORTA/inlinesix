@@ -1,0 +1,152 @@
+@font-face {
+    font-family: 'PPNeue-Medium';
+    src: URL('PPNeueMontreal-Medium.otf') format('opentype');
+  }
+
+@font-face {
+font-family: 'PPNeue-Thin';
+src: URL('PPNeueMontreal-Thin.otf') format('opentype');
+}
+
+@font-face{
+    font-family: 'IBMPlex-Mono';
+    src: URL('IBMPLEXMONO-LIGHT.TTF') format('truetype')
+}
+
+@font-face{
+    font-family: 'IBMPlex-MonoBold';
+    src: URL('IBMPLEXMONO-BOLD.TTF') format('truetype')
+}
+
+
+h1{
+    font-size: 24px;
+    font-family: PPNeue-Medium;
+}
+
+h2{
+    font-size: 24px;
+    font-family: PPNeue-Thin;
+}
+
+
+p1{
+    font-family: IBMPlex-Mono;
+    font-size: 12px;
+    display: block;
+}
+
+p2{
+    font-family: PPNeue-Thin;
+
+}
+
+.bread{
+    font-size: 24px;
+    display: inline;
+    font-family: PPNeue-Medium;
+}
+
+.bread:hover{
+    padding-left: 0px;
+    background-color: black;
+    color: red;
+}
+
+a{
+    size: 100%;
+    font-family: IBMPlex-Mono;
+    font-size: 12px;
+    display: block;
+    transition-duration: 0.5s;
+    cursor: pointer;
+    padding: 10px 0px 10px 0px;
+    text-decoration: none
+}
+
+a:hover{
+    padding-left: 10px;
+    background-color: red;
+    text-decoration: none;
+}
+
+a:visited{
+    color: white;
+    size: 100%;
+    text-decoration: none;
+}
+
+body { 
+    opacity: 0;
+    transition: opacity .2s;
+ }
+
+.backbutton{
+    margin-top: 50px;
+    font-family: IBMPlex-MonoBold;
+}
+
+
+.bottomtext{
+    position: absolute;
+    bottom: 100;
+    display: inline-block;
+    opacity: 100%;
+    transition-duration: 0.5s;
+    cursor: pointer;
+    width: 70;
+    text-align: center;
+}
+
+.bottomtext:hover{
+    background-color: red;
+}
+
+.log{
+    position: absolute;
+    display: inline-block;
+    left: 0;
+    opacity: 0%;
+    z-index: -1;
+    transition-duration: 0.5s;
+    width: 300;
+}
+
+.bottomtext:hover .log{
+    opacity: 50%;
+    left: 10;
+}
+
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 0px;
+}
+
+/* Create two equal columns that sits next to each other */
+.column {
+    flex:10%;
+    padding: 0 0px;
+    
+}
+
+.column img {
+    margin-top: 40px;
+    width: 20%;
+    vertical-align: middle;
+    transition-duration: 0.2s;
+    opacity: 100%;
+    filter: blur(2px) saturate(0);
+    transition-timing-function: ease-in-out;
+    z-index: -0;
+}
+
+.column img:hover {
+    position: relative;
+    transform: scale(170%);
+    opacity: 100%;
+    z-index: 1000;
+    filter: blur(0px) saturate(1) drop-shadow(0px 8px 40px  black);
+}
+

@@ -1,0 +1,38 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>CHANGELOG</title>
+    <link rel="stylesheet" href="styles.css">
+    <body style="background-color: #000000; color: white; margin-left: 50px; margin-right: 50px">
+    </body>
+</html>
+
+<div style="background-color: rgba(255,255,255,0.1); padding: 20px; margin-top: 100px;">
+    <h1>VERSION 1.01<p2 style="float: right;">15/08/2022</h1>
+    <p1>the contact page now looks like another text file</p1>
+    <br>
+</div>
+
+<div style="background-color: rgba(255,255,255,0.1); padding: 20px; margin-top: 100px;">
+    <h1>VERSION 1<p2 style="float: right;">14/08/2022</h1>
+    <p1>I did some shit and made the whole website, the art page is really fuckin slow cause its loading a bunch of high res images at once lmao i can't be fucked to fix it.</p1>
+    <br>
+</div>
+
+<a class="backbutton" onclick="transitionToPage('index.html')"ABOUT.txt> [BACK] </a>
+
+<script>
+    
+    window.transitionToPage = function(href) {
+        document.querySelector('body').style.opacity = 0
+        setTimeout(function() { 
+            window.location.href = href
+        }, 200)
+    }
+    
+    document.addEventListener('DOMContentLoaded', function(event) {
+        document.querySelector('body').style.opacity = 1
+    })
+    
+    
+</script>

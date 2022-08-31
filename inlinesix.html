@@ -1,0 +1,41 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>INLINESIX</title>
+    <link rel="stylesheet" href="styles.css">
+    <body style="background-color: #000000; color: white; margin-left: 50px; margin-right: 50px">
+    </body>
+</html>
+
+<h1 style="margin-top: 100px;">DIRECTORY OF <a class="bread" onclick="transitionToPage('index.html')">/HOME</a>/INLINESIX</h1>
+
+<a onclick="transitionToPage('https://soundcloud.com/inlinesixmusic')">SOUNDCLOUD</a>
+<a onclick="transitionToPage('https://twitter.com/INLINESIX_')">TWITTER</a>
+<a onclick="transitionToPage('https://open.spotify.com/artist/2jLOhKOVDOvh5ryVIu8oMF?si=zDo3YUqnS_Syvx2l40gzLA')">SPOTIFY</a>
+<a onclick="transitionToPage('https://linktr.ee/INLINESIX')">LINKTREE</a>
+<a onclick="transitionToPage('contact.html')">CONTACT.txt</a>
+
+
+
+<a class="backbutton" onclick="transitionToPage('index.html')"ABOUT.txt> [BACK] </a>
+
+
+
+
+
+
+<script>
+    
+window.transitionToPage = function(href) {
+    document.querySelector('body').style.opacity = 0
+    setTimeout(function() { 
+        window.location.href = href
+    }, 200)
+}
+
+document.addEventListener('DOMContentLoaded', function(event) {
+    document.querySelector('body').style.opacity = 1
+})
+
+
+</script>

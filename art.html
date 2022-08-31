@@ -1,0 +1,55 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>ART</title>
+    <link rel="stylesheet" href="styles.css">
+    <body style="background-color: #000000; color: white; margin-left: 50px; margin-right: 50px">
+    </body>
+</html>
+
+<h1 style="margin-top: 100px;"><a class="bread" onclick="transitionToPage('index.html')">/HOME</a>/ART</h1>
+
+<p1>art stuff. right click and select "open image" to get the full resolution file.
+    <br>(i think this page is really slow cause these images are really high res lol)</p1>
+
+<div class="row" style="text-align: center;">
+    <div class="column">
+      <img src="art/breaking.jpg">
+      <img src="art/carbonjpg.jpg">
+      <img src="art/control.jpg">
+      <img src="art/f40.jpg">
+      <img src="art/HUD.jpg">
+      <img src="art/machinecodedithered.jpg">
+      <img src="art/metro.jpg">
+
+    </div>
+    <div class="column">
+      <img src="art/one.jpg">
+      <img src="art/twoalt.jpg">
+      <img src="art/SDCa.jpg">
+      <img src="art/sdfg.jpg">
+      <img src="art/soulproject.jpg">
+      <img src="art/supra.jpg">
+      <img src="art/vertfex.jpg">
+    </div>
+
+  </div>
+
+<a class="backbutton" onclick="transitionToPage('index.html')"ABOUT.txt> [BACK] </a>
+
+
+<script>
+    
+window.transitionToPage = function(href) {
+    document.querySelector('body').style.opacity = 0
+    setTimeout(function() { 
+        window.location.href = href
+    }, 200)
+}
+
+document.addEventListener('DOMContentLoaded', function(event) {
+    document.querySelector('body').style.opacity = 1
+})
+
+
+</script>
