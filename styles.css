@@ -94,7 +94,7 @@ body {
     opacity: 100%;
     transition-duration: 0.5s;
     cursor: pointer;
-    width: 70;
+    width: 100;
     text-align: center;
 }
 
@@ -109,12 +109,12 @@ body {
     opacity: 0%;
     z-index: -1;
     transition-duration: 0.5s;
-    width: 400;
+    width: 300;
 }
 
 .bottomtext:hover .log{
     opacity: 50%;
-    left: 10;
+    left: 30;
 }
 
 
