@@ -77,15 +77,35 @@ a:visited{
 }
 
 body { 
-    opacity: 0;
+    opacity: 1;
     transition: opacity .2s;
  }
+/* Light mode */
+@media (prefers-color-scheme: light) {
+    body {
+        background-color: white;
+        color: black;
+    }
 
-.backbutton{
-    margin-top: 50px;
-    font-family: IBMPlex-MonoBold;
+    a{
+        font-family: IBMPlex-Mono;
+    }
+
+    .bread:hover{
+        background-color: white;
+
+    }
+    
+
+
 }
-
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: black;
+        color: white;
+    }
+}
 
 .bottomtext{
     position: absolute;
@@ -144,9 +164,9 @@ body {
 
 .column img:hover {
     position: relative;
-    transform: scale(170%);
+    transform: scale(120%);
     opacity: 100%;
     z-index: 1000;
-    filter: blur(0px) saturate(1) drop-shadow(0px 8px 40px  black);
+    filter: blur(0px) saturate(1) drop-shadow(0px 20px 40px  rgba(0, 0, 0, 0.527));
 }
 
