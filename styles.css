@@ -4,8 +4,8 @@
   }
 
 @font-face {
-font-family: 'PPNeue-Thin';
-src: URL('PPNeueMontreal-Thin.otf') format('opentype');
+    font-family: 'PPNeue-Thin';
+    src: URL('PPNeueMontreal-Thin.otf') format('opentype');
 }
 
 @font-face{
@@ -78,33 +78,31 @@ a:visited{
 
 body { 
     opacity: 1;
-    transition: opacity .2s;
+    transition: opacity .5s;
  }
-/* Light mode */
-@media (prefers-color-scheme: light) {
-    body {
-        background-color: white;
-        color: black;
-    }
+    /* Light mode */
+    @media (prefers-color-scheme: light) {
+        body {
+            background-color: white;
+            color: black;
+        }
 
-    a{
-        font-family: IBMPlex-Mono;
-    }
+        a:hover{
+            color: white;
+        }
 
-    .bread:hover{
-        background-color: white;
+        .bread:hover{
+            background-color: white;
 
-    }
-    
-
+        }
 
 }
-/* Dark mode */
-@media (prefers-color-scheme: dark) {
-    body {
-        background-color: black;
-        color: white;
-    }
+    /* Dark mode */
+    @media (prefers-color-scheme: dark) {
+        body {
+            background-color: black;
+            color: white;
+        }
 }
 
 .bottomtext{
@@ -146,8 +144,8 @@ body {
 
 /* Create two equal columns that sits next to each other */
 .column {
-    flex:10%;
-    padding: 0 0px;
+    flex:100%;
+    padding: 10 0px;
     
 }
 
