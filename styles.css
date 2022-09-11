@@ -29,6 +29,12 @@ h2{
     font-family: PPNeue-Thin;
 }
 
+h3{
+    font-size: 24px;
+    font-family: PPNeue-Medium;
+    padding-top: 0px;
+    display: block;
+}
 
 p1{
     font-family: IBMPlex-Mono;
@@ -38,7 +44,6 @@ p1{
 
 p2{
     font-family: PPNeue-Thin;
-
 }
 
 .bread{
@@ -135,36 +140,45 @@ body {
     left: 50;
 }
 
-
-.row {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0 0px;
+.artgal {
+    padding: 10px 60px 60px 60px;
+    transition-duration: 0.5s;
+    filter: saturate(0);
 }
 
-/* Create two equal columns that sits next to each other */
-.column {
-    flex:100%;
-    padding: 10 0px;
-    
+.imggal{
+    margin: auto;
+    padding-right: 10px;
+}
+
+.artgal:hover {
+    background-color: rgba(255,255,255,0.05);
+    filter: saturate(1);
+}
+
+body .artgal:hover {
+    filter: blur(1);
+}
+
+.column{
+    padding-top: 20px;
 }
 
 .column img {
     margin-top: 40px;
-    width: 20%;
+    height: 27%;
     vertical-align: middle;
     transition-duration: 0.2s;
     opacity: 100%;
-    filter: blur(2px) saturate(0);
+    filter: blur(2px) saturate(1);
     transition-timing-function: ease-in-out;
     z-index: -0;
 }
 
 .column img:hover {
     position: relative;
-    transform: scale(120%);
+    transform: scale(110%);
     opacity: 100%;
-    z-index: 1000;
+    z-index: 1;
     filter: blur(0px) saturate(1) drop-shadow(0px 20px 40px  rgba(0, 0, 0, 0.527));
 }
-
