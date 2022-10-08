@@ -1,0 +1,59 @@
+<html>
+  <head>
+    <meta name="color-scheme" content="light dark">
+    <meta name="supported-color-schemes" content="light dark">
+    <meta charset="utf-8">
+    <meta name="description" content="inlinesix photography page">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHOTOGRAPHY</title>
+    <link rel="icon" type="image/x-icon" href="icon.ico">
+    <link rel="stylesheet" href="styles.css">
+    <body style="margin-left: 50px; margin-right: 50px">
+    </body>
+</html>
+
+<h1 style="margin-top: 100px;">DIRECTORY OF <a class="bread" onclick="transitionToPage('index.html')">/HOME</a>/PHOTOGRAPHY</h1>
+
+<p1>laugh at my shitty photos. this page will look horrible on mobile, i dont care anymore i hate css</p1>
+<br>
+
+
+<div class="column">
+  <div class="artgal">
+    <h3 style="display:inline; float: right;">3/10/2022</h3>
+    <h3>FAIRLANE 500</h3>
+    <p1>FUJIFILM XT-30II + XF 18-500MM + TIDE OPTICS CINESOFT<br>3:2 CROPPED TO 2.7:1 <br>26MM 1/60s 80ISO f/3.2 <br>36MM 1/15s 80ISO f/3.6 <br>ADOBE LIGHTROOM</p1>
+    <br>
+    <a class="imagelink" href="PHOTOGRAPHY/fairlane1.jpg" target="new"> <img src="PHOTOGRAPHY/fairlane1.jpg"></a>
+    <a class="imagelink" href="PHOTOGRAPHY/fairlane2.jpg" target="new"> <img src="PHOTOGRAPHY/fairlane2.jpg"></a>
+  </div>
+</div>
+
+<div class="column">
+  <div class="artgal">
+    <h3 style="display:inline; float: right;">9/09/2022</h3>
+    <h3>POOL</h3>
+    <p1>FUJIFILM XT-30II + XF 18-500MM <br>55MM 1/500s 160ISO f/4 <br>26MM 1/30s 80ISO f/4 <br>CAPTURE ONE EXPRESS</p1>
+    <br>
+    <a class="imagelink" href="PHOTOGRAPHY/pool1.jpg" target="new"> <img src="PHOTOGRAPHY/pool1.jpg"></a>
+    <a class="imagelink" href="PHOTOGRAPHY/pool2.jpg" target="new"> <img src="PHOTOGRAPHY/pool2.jpg"></a>
+  </div>
+</div>
+
+<a style="position: sticky; bottom: 30px; z-index: 5000; ;" class="backbutton" onclick="transitionToPage('index.html')"ABOUT.txt> [BACK] </a>
+
+
+<script>
+    
+window.transitionToPage = function(href) {
+    document.querySelector('body').style.opacity = 0
+    setTimeout(function() { 
+        window.location.href = href
+    }, 200)
+}
+
+document.addEventListener('DOMContentLoaded', function(event) {
+    document.querySelector('body').style.opacity = 1
+})
+
+</script>

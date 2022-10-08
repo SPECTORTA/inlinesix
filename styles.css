@@ -58,6 +58,8 @@ p2{
     color: red;
 }
 
+
+
 a{
     size: 100%;
     font-family: IBMPlex-Mono;
@@ -98,15 +100,25 @@ body {
 
         .bread:hover{
             background-color: white;
-
         }
 
+        .artgal:hover {
+            background-color: rgba(0, 0, 0, 0.1);
+            filter: saturate(1);
+
+        }
 }
     /* Dark mode */
     @media (prefers-color-scheme: dark) {
         body {
             background-color: black;
             color: white;
+        }
+
+        
+        .artgal:hover {
+            background-color: rgba(255,255,255,0.05);
+            filter: saturate(1);
         }
 }
 
@@ -146,39 +158,41 @@ body {
     filter: saturate(0);
 }
 
-.imggal{
-    margin: auto;
-    padding-right: 10px;
-}
 
-.artgal:hover {
-    background-color: rgba(255,255,255,0.05);
-    filter: saturate(1);
-}
 
-body .artgal:hover {
-    filter: blur(1);
-}
+
 
 .column{
-    padding-top: 20px;
+    padding-top: 0px;
 }
 
+
+
 .column img {
-    margin-top: 40px;
-    height: 27%;
+    max-width: 45%;
     vertical-align: middle;
     transition-duration: 0.2s;
     opacity: 100%;
-    filter: blur(2px) saturate(1);
+    filter: saturate(1);
     transition-timing-function: ease-in-out;
     z-index: -0;
 }
 
 .column img:hover {
-    position: relative;
-    transform: scale(110%);
+    transform: scale(98%);
     opacity: 100%;
     z-index: 1;
-    filter: blur(0px) saturate(1) drop-shadow(0px 20px 40px  rgba(0, 0, 0, 0.527));
+    filter: saturate(1) drop-shadow(0px 20px 40px  rgba(0, 0, 0, 0.527));
 }
+
+.imagelink{
+    width: 0%;
+    display: inline;
+}
+
+.imagelink:hover{
+    padding-left: 0px;
+    background-color: rgba(0, 0, 0, 0);
+    text-decoration: none;   
+}
+
