@@ -169,8 +169,7 @@ body {
 
 
 .column img {
-    max-width: 45%;
-    vertical-align: middle;
+    max-width: 300px;
     transition-duration: 0.2s;
     opacity: 100%;
     filter: saturate(1);
@@ -186,6 +185,7 @@ body {
 }
 
 .imagelink{
+    
     width: 0%;
     display: inline;
 }
